@@ -1,36 +1,187 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏎️ Scuderia Varga - Centro Automotivo Premium
 
-## Getting Started
+Website institucional da **Scuderia Varga**, centro automotivo premium com mais de 25 anos de experiência no Vale do Paraíba, especializado em marcas como BMW, Jeep, Mercedes-Benz, Volvo, BYD, Subaru, Mitsubishi, Ferrari, Audi, Land Rover, Chevrolet, GWM e Porsche.
 
-First, run the development server:
+## 📋 Sobre o Projeto
+
+Site moderno e responsivo desenvolvido para apresentar os serviços, tecnologias e diferenciais do **Grupo VS**, que inclui 3 unidades:
+- **Scuderia Varga** - São José dos Campos
+- **Varga Serviços** - São José dos Campos
+- **Varga Serviços Bosch Car Service** - Caraguatatuba
+
+## 🚀 Tecnologias
+
+- **[Next.js 15](https://nextjs.org/)** - Framework React com App Router
+- **[React 19](https://react.dev/)** - Biblioteca JavaScript
+- **[TypeScript](https://www.typescriptlang.org/)** - Tipagem estática
+- **[Tailwind CSS](https://tailwindcss.com/)** - Framework CSS utility-first
+- **[Framer Motion](https://www.framer.com/motion/)** - Biblioteca de animações
+- **[Embla Carousel](https://www.embla-carousel.com/)** - Carrossel responsivo
+- **[Lucide React](https://lucide.dev/)** - Ícones SVG
+- **[Geist Font](https://vercel.com/font)** - Tipografia moderna
+
+## ✨ Funcionalidades
+
+### 🎥 Hero Banner
+- Vídeo de fundo do YouTube com autoplay
+- Overlay suave para melhor legibilidade
+- Header transparente com efeito de scroll
+- Design responsivo e otimizado
+
+### 📱 Seções Principais
+
+1. **Serviços Principais**
+   - 11 serviços destacados com ícones
+   - Cards com gradiente vermelho
+   - Animações ao scroll
+
+2. **Marcas Atendidas**
+   - Carrossel infinito com 13 marcas premium
+   - Autoplay e navegação manual
+   - Design minimalista
+
+3. **Quem Somos**
+   - Layout lado a lado (texto + cards)
+   - Missão e Valores em destaque
+   - Background preto nos cards
+
+4. **Nossos Diferenciais**
+   - 6 diferenciais em carrossel
+   - Cards com imagens e overlay
+   - Altura otimizada (384px)
+
+5. **Todos os Serviços**
+   - 17 serviços detalhados
+   - Grid responsivo (até 4 colunas)
+   - Ícones ao lado esquerdo
+
+6. **Nossa Tecnologia**
+   - 4 equipamentos de última geração
+   - Cards verticais com imagens
+   - Descrições detalhadas
+
+7. **Alta Tecnologia em Scanners**
+   - 4 scanners principais com imagens
+   - Scanner Launch Pad 7 em destaque
+   - Layout 2 colunas (imagem + conteúdo)
+
+8. **Rodapé**
+   - Informações de 3 unidades
+   - Mapas Google integrados
+   - Links para telefone e email
+   - Horários de atendimento
+
+### 🎨 Recursos de Design
+
+- **Tema de Cores**: Preto, Vermelho (#DC2626) e Cinza
+- **Animações**: Scroll reveal com Framer Motion
+- **Carrosséis**: Loop infinito sem sobreposição
+- **Responsividade**: Mobile-first design
+- **Performance**: Lazy loading de imagens e mapas
+- **SEO**: Metadata otimizada
+
+## 🛠️ Instalação e Execução
+
+### Pré-requisitos
+- Node.js 18+ 
+- npm, yarn, pnpm ou bun
+
+### Instalação
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Clone o repositório
+git clone https://github.com/seu-usuario/scuderia-varga.git
+
+# Entre na pasta
+cd scuderia-varga
+
+# Instale as dependências
+npm install
+# ou
+yarn install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Desenvolvimento
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Inicie o servidor de desenvolvimento
+npm run dev
+# ou
+yarn dev
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Acesse http://localhost:3000
+```
 
-## Learn More
+### Build para Produção
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Gere a build otimizada
+npm run build
+# ou
+yarn build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Inicie o servidor de produção
+npm start
+# ou
+yarn start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📁 Estrutura do Projeto
 
-## Deploy on Vercel
+```
+scuderia-varga/
+├── public/
+│   ├── images/           # Imagens do site
+│   │   ├── logos/        # Logos das marcas
+│   │   ├── scanner*.png  # Imagens dos scanners
+│   │   └── tecnologia*.png # Equipamentos
+│   └── videos/           # Vídeos institucionais
+├── src/
+│   ├── app/
+│   │   ├── favicon.ico
+│   │   ├── globals.css   # Estilos globais
+│   │   ├── layout.tsx    # Layout principal
+│   │   └── page.tsx      # Página inicial
+│   └── components/
+│       ├── About.tsx         # Quem Somos
+│       ├── Brands.tsx        # Marcas Atendidas
+│       ├── Differentials.tsx # Nossos Diferenciais
+│       ├── Footer.tsx        # Rodapé
+│       ├── Header.tsx        # Cabeçalho
+│       ├── Hero.tsx          # Banner principal
+│       ├── MainServices.tsx  # Serviços principais
+│       ├── Scanners.tsx      # Scanners
+│       ├── Services.tsx      # Todos os serviços
+│       ├── Technology.tsx    # Nossa Tecnologia
+│       └── WhatsAppButton.tsx # Botão flutuante
+├── eslint.config.mjs
+├── next.config.ts
+├── package.json
+├── postcss.config.mjs
+├── tailwind.config.ts
+└── tsconfig.json
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎯 Otimizações Implementadas
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- ✅ Vídeo YouTube (melhor performance que vídeo local)
+- ✅ Images Next.js com lazy loading
+- ✅ Carrosséis otimizados sem glitches
+- ✅ Animações suaves com Framer Motion
+- ✅ Código TypeScript com tipagem forte
+- ✅ SEO otimizado com metadata
+- ✅ Favicon personalizado
+- ✅ Google Maps com lazy loading
+
+## 📞 Contato
+
+**Scuderia Varga**
+- 📍 Av. Andrômeda, 2410 – Jardim Satélite, São José dos Campos - SP
+- 📞 (12) 3933-0505
+- 📱 WhatsApp: +55 12 99601-1497
+- 📧 atendimento@scuderiavarga.com.br
+- 🌐 Instagram: [@scuderiavarga](https://www.instagram.com/scuderiavarga)
+
+---
+
+**Desenvolvido com ❤️ por Ramon Oliveira**
