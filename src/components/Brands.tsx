@@ -48,12 +48,6 @@ export default function Brands() {
   return (
     <section className="py-8 bg-black">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-white uppercase">
-            Marcas Atendidas
-          </h2>
-        </div>
-
         <div className="relative">
           {/* Carrossel */}
           <div className="overflow-hidden" ref={emblaRef}>
@@ -79,14 +73,14 @@ export default function Brands() {
 
           {/* Botões de navegação */}
           <button
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-gray-800/60 hover:bg-gray-700/80 text-gray-400 hover:text-white p-2 rounded-full transition-all duration-300 z-10"
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-neutral-800/60 hover:bg-neutral-700/80 text-neutral-400 hover:text-white p-2 rounded-full transition-all duration-300 z-10"
             onClick={scrollPrev}
             aria-label="Anterior"
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
           <button
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-gray-800/60 hover:bg-gray-700/80 text-gray-400 hover:text-white p-2 rounded-full transition-all duration-300 z-10"
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-neutral-800/60 hover:bg-neutral-700/80 text-neutral-400 hover:text-white p-2 rounded-full transition-all duration-300 z-10"
             onClick={scrollNext}
             aria-label="Próximo"
           >

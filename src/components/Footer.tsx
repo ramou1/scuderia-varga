@@ -1,6 +1,6 @@
 'use client'
 
-import { MapPin, Phone, Mail, Clock } from 'lucide-react'
+import { MapPin, Phone, Mail, Clock, Instagram, Facebook } from 'lucide-react'
 import Image from 'next/image'
 
 const locations = [
@@ -34,94 +34,15 @@ const locations = [
 ]
 
 const businessHours = {
-  weekdays: 'Segunda a Sexta: 8:00 às 18:00',
-  saturday: 'Sábado: 8:00 às 18:00'
+  weekdays: 'Segunda a Sexta: 08:00 às 18:00',
+  saturday: 'Sábado: 08:00 às 12:00'
 }
 
 export default function Footer() {
   return (
     <footer className="bg-black text-white">
-      {/* Main Footer Content */}
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid lg:grid-cols-4 gap-12">
-          {/* Logo e Descrição */}
-          <div className="space-y-6">
-            <div className="space-y-4">
-              <Image
-                src="/images/logo-scuderia-horizontal.png"
-                alt="Scuderia Varga"
-                width={240}
-                height={72}
-                className="h-16 w-auto"
-              />
-              <Image
-                src="/images/by-varga.png"
-                alt="By Varga"
-                width={140}
-                height={56}
-                className="h-12 w-auto"
-              />
-            </div>
-            <p className="text-gray-400 leading-relaxed">
-              Há mais de 25 anos oferecendo serviços automotivos de qualidade no Vale do Paraíba. 
-              Especialistas em marcas premium com tecnologia de ponta.
-            </p>
-          </div>
-
-          {/* Unidades */}
-          {locations.map((location, index) => (
-            <div key={index} className="space-y-4">
-              <h3 className="text-xl font-bold text-red-500 uppercase">
-                {location.name}
-              </h3>
-              <p className="text-sm font-semibold text-gray-300">
-                {location.city}
-              </p>
-              
-              <div className="space-y-3 text-sm text-gray-400">
-                <div className="flex items-start space-x-2">
-                  <MapPin className="w-4 h-4 mt-1 flex-shrink-0 text-red-500" />
-                  <div>
-                    <p>{location.address}</p>
-                    <p>{location.cep}</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-2">
-                  <Phone className="w-4 h-4 text-red-500" />
-                  <a href={`tel:${location.phone.replace(/\s/g, '')}`} className="hover:text-red-500 transition-colors">
-                    {location.phone}
-                  </a>
-                </div>
-                
-                <div className="flex items-center space-x-2">
-                  <Mail className="w-4 h-4 text-red-500" />
-                  <a href={`mailto:${location.email}`} className="text-xs hover:text-red-500 transition-colors break-all">
-                    {location.email}
-                  </a>
-                </div>
-              </div>
-
-              {/* Horário de Atendimento */}
-              <div className="pt-4 border-t border-gray-800">
-                <div className="space-y-2 text-sm text-gray-400">
-                  <div className="flex items-center space-x-2">
-                    <Clock className="w-4 h-4 text-red-500" />
-                    <span>{businessHours.weekdays}</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <Clock className="w-4 h-4 text-red-500" />
-                    <span>{businessHours.saturday}</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Google Maps Section */}
-      <div className="border-t border-gray-900 py-12">
+      {/* Google Maps Section - Movido para cima */}
+      <div className="border-b border-gray-900 py-12">
         <div className="container mx-auto px-4">
           <h3 className="text-2xl md:text-3xl font-bold text-center text-white mb-8 uppercase">
             Nossas Unidades
@@ -172,6 +93,107 @@ export default function Footer() {
         </div>
       </div>
 
+      {/* Main Footer Content */}
+      <div className="container mx-auto px-4 py-16">
+        <div className="grid lg:grid-cols-4 gap-12">
+          {/* Logo e Descrição */}
+          <div className="space-y-6">
+            <div className="flex items-center gap-3">
+              <Image
+                src="/images/logo-scuderia.png"
+                alt="Scuderia Varga"
+                width={160}
+                height={160}
+                className="h-20 w-auto"
+              />
+              <Image
+                src="/images/by-varga.png"
+                alt="By Varga"
+                width={100}
+                height={40}
+                className="h-10 w-auto"
+              />
+            </div>
+            <p className="text-gray-400 leading-relaxed">
+              Há mais de 25 anos oferecendo serviços automotivos de qualidade no Vale do Paraíba. 
+              Especialistas em marcas premium com tecnologia de ponta.
+            </p>
+            
+            {/* Redes Sociais */}
+            <div className="flex space-x-4 pt-2">
+              <a
+                href="https://www.instagram.com/scuderiavarga"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-red-500 transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-6 h-6" />
+              </a>
+              <a
+                href="https://www.facebook.com/vargaservico"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-red-500 transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-6 h-6" />
+              </a>
+            </div>
+          </div>
+
+          {/* Unidades */}
+          {locations.map((location, index) => (
+            <div key={index} className="space-y-4">
+              <h3 className="text-xl font-bold text-white uppercase">
+                {location.name}
+              </h3>
+              <p className="text-sm font-semibold text-gray-300">
+                {location.city}
+              </p>
+              
+              <div className="space-y-3 text-sm text-gray-400">
+                <div className="flex items-start space-x-2">
+                  <MapPin className="w-4 h-4 mt-1 flex-shrink-0 text-white" />
+                  <div>
+                    <p>{location.address}</p>
+                    <p>{location.cep}</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-center space-x-2">
+                  <Phone className="w-4 h-4 text-white" />
+                  <a href={`tel:${location.phone.replace(/\s/g, '')}`} className="hover:text-red-500 transition-colors">
+                    {location.phone}
+                  </a>
+                </div>
+                
+                <div className="flex items-center space-x-2">
+                  <Mail className="w-4 h-4 text-white" />
+                  <a href={`mailto:${location.email}`} className="text-xs hover:text-red-500 transition-colors break-all">
+                    {location.email}
+                  </a>
+                </div>
+              </div>
+
+              {/* Horário de Atendimento */}
+              <div className="pt-4 border-t border-gray-800">
+                <div className="space-y-2 text-sm text-gray-400">
+                  <div className="flex items-center space-x-2">
+                    <Clock className="w-4 h-4 text-white" />
+                    <span>{businessHours.weekdays}</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <Clock className="w-4 h-4 text-white" />
+                    <span>{businessHours.saturday}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* Bottom Bar */}
       <div className="border-t border-gray-900">
         <div className="container mx-auto px-4 py-6">
@@ -180,7 +202,7 @@ export default function Footer() {
               © 2024 Scuderia Varga. Todos os direitos reservados.
             </p>
             <p className="text-gray-500 text-sm">
-              Site desenvolvido por <span className="text-red-500 font-semibold">Ramon Oliveira</span>
+              Site desenvolvido por <a href="https://www.linkedin.com/in/ramou1" target="_blank" rel="noopener noreferrer" className="text-red-500 font-semibold hover:text-red-400 transition-colors">Ramon Oliveira</a>
             </p>
           </div>
         </div>

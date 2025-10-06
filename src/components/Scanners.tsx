@@ -6,19 +6,19 @@ import Image from 'next/image'
 const scanners = [
   {
     name: 'X431 PRO SE LAUNCH',
-    image: '/images/scanner01.png'
+    image: '/images/scanners/scanner01.png'
   },
   {
     name: 'SUN PDL8100',
-    image: '/images/scanner02.png'
+    image: '/images/scanners/scanner02.png'
   },
   {
     name: 'KTS 590',
-    image: '/images/scanner03.png'
+    image: '/images/scanners/scanner03.png'
   },
   {
     name: 'MULTIMEC IK2115',
-    image: '/images/scanner04.png'
+    image: '/images/scanners/scanner04.png'
   }
 ]
 
@@ -85,13 +85,13 @@ export default function Scanners() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="bg-gradient-to-br from-slate-700 to-slate-800 text-white rounded-2xl overflow-hidden shadow-xl"
+            className="bg-neutral-800 text-white rounded-2xl overflow-hidden shadow-xl"
           >
             <div className="grid md:grid-cols-2 gap-8 items-center">
               {/* Imagem */}
               <div className="relative h-96 md:h-full">
                 <Image
-                  src="/images/scanner05.png"
+                  src="/images/scanners/scanner05.png"
                   alt="Scanner Launch Pad 7"
                   fill
                   className="object-contain p-8"

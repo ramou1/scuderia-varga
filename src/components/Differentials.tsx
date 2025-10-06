@@ -8,27 +8,27 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 const differentials = [
   {
     title: 'EQUIPAMENTOS DE ALTA TECNOLOGIA EMBARCADA',
-    image: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&h=600&fit=crop',
+    image: '/images/diferenciais/equipamentos-alta-tecnologia.jpeg',
   },
   {
     title: 'AGILIDADE NO DIAGNÓSTICO',
-    image: 'https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=800&h=600&fit=crop',
+    image: '/images/diferenciais/agilidade-diagnostico.jpeg',
   },
   {
     title: 'EXCELÊNCIA NO ATENDIMENTO E FOLLOW-UP COM O CLIENTE',
-    image: 'https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=800&h=600&fit=crop',
+    image: '/images/diferenciais/excelencia-atendimento.jpeg',
   },
   {
     title: 'EQUIPE DEDICADA PARA ORÇAMENTOS',
-    image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&h=600&fit=crop',
+    image: '/images/diferenciais/equipe-dedicada.jpeg',
   },
   {
     title: '*TABELAS DE PREÇOS DIFERENCIADA PARA FROTISTA',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop',
+    image: '/images/diferenciais/tabela-frotistas.jpeg',
   },
   {
     title: '*MOBILIZAÇÃO E DESMOBILIZAÇÃO DE FROTA',
-    image: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800&h=600&fit=crop',
+    image: '/images/diferenciais/mobilizacao-frotas.jpeg',
   },
 ]
 
@@ -56,13 +56,13 @@ export default function Differentials() {
   const duplicatedDifferentials = [...differentials, ...differentials]
 
   return (
-    <section id="diferenciais" className="py-20 bg-gray-900">
+    <section id="diferenciais" className="py-20 bg-neutral-800">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 uppercase">
             Nossos Diferenciais
           </h2>
-          <p className="text-base text-gray-400 max-w-2xl mx-auto">
+          <p className="text-base text-neutral-300 max-w-2xl mx-auto">
             O que nos torna referência em serviços automotivos no Vale do Paraíba
           </p>
         </div>
@@ -116,7 +116,7 @@ export default function Differentials() {
 
         {/* Observação */}
         <div className="mt-8 text-center">
-          <p className="text-sm text-gray-400 italic">
+          <p className="text-sm text-neutral-300 italic">
             *Serviço encontrado apenas na Loja Varga Serviços SJC
           </p>
         </div>

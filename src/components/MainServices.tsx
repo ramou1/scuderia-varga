@@ -30,8 +30,19 @@ const mainServices = [
 
 export default function MainServices() {
   return (
-    <section className="py-16 bg-white">
-      <div className="container mx-auto px-4">
+    <section className="relative bg-neutral-900" style={{ minHeight: '600px' }}>
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: 'url(/images/bg-carro.png)' }}
+      />
+      
+      {/* Overlay cinza suave */}
+      <div className="absolute inset-0 bg-neutral-500/30" />
+      
+      {/* Content Container */}
+      <div className="relative z-10 py-16">
+        <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -39,10 +50,10 @@ export default function MainServices() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 uppercase">
-            Serviços Principais
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 uppercase">
+            Principais Serviços
           </h2>
-          <p className="text-base text-gray-600 max-w-2xl mx-auto">
+          <p className="text-base text-gray-300 max-w-2xl mx-auto">
             Oferecemos uma gama completa de serviços automotivos com tecnologia de ponta
           </p>
         </motion.div>
@@ -70,6 +81,7 @@ export default function MainServices() {
               </motion.div>
             )
           })}
+        </div>
         </div>
       </div>
     </section>

@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Menu, X, Instagram, Facebook, Linkedin } from 'lucide-react'
+import { Menu, X, Instagram, Facebook } from 'lucide-react'
 import Image from 'next/image'
 
 export default function Header() {
@@ -27,14 +27,13 @@ export default function Header() {
 
   const socialLinks = [
     { icon: Instagram, href: 'https://www.instagram.com/scuderiavarga', label: 'Instagram' },
-    { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
+    { icon: Facebook, href: 'https://www.facebook.com/vargaservico', label: 'Facebook' },
   ]
 
   return (
     <header className={`shadow-lg sticky top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-black' : 'bg-black/80 backdrop-blur-sm'}`}>
       {/* Top bar com WhatsApp */}
-      <div className="bg-gray-700 text-white py-2">
+      <div className="bg-neutral-700 text-white py-2">
         <div className="container mx-auto px-4 flex justify-center items-center">
           <a 
             href="https://wa.me/5512996011497" 

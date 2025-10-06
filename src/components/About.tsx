@@ -5,7 +5,7 @@ import { Target, Heart } from 'lucide-react'
 
 export default function About() {
   return (
-    <section id="quem-somos" className="py-20 bg-gray-50">
+    <section id="quem-somos" className="py-20" style={{ backgroundColor: '#CFCFCF' }}>
       <div className="container mx-auto px-4">
         {/* Título */}
         <motion.div
@@ -58,7 +58,7 @@ export default function About() {
               viewport={{ once: true }}
               className="bg-black p-6 rounded-2xl shadow-xl"
             >
-              <div className="flex flex-col items-center text-center">
+              <div className="flex flex-col items-start text-left">
                 <h3 className="text-2xl font-bold text-white mb-4 uppercase">
                   Missão
                 </h3>
@@ -76,7 +76,7 @@ export default function About() {
               viewport={{ once: true }}
               className="bg-black p-6 rounded-2xl shadow-xl"
             >
-              <div className="flex flex-col items-center text-center">
+              <div className="flex flex-col items-start text-left">
                 <h3 className="text-2xl font-bold text-white mb-4 uppercase">
                   Valores
                 </h3>
