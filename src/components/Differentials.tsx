@@ -8,7 +8,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 const differentials = [
   {
     title: 'EQUIPAMENTOS DE ALTA TECNOLOGIA EMBARCADA',
-    image: '/images/diferenciais/equipamentos-alta-tecnologia.jpeg',
+    image: '/images/diferenciais/equipamentos-alta-tecnologia.png',
   },
   {
     title: 'AGILIDADE NO DIAGNÓSTICO',
@@ -76,7 +76,7 @@ export default function Differentials() {
                   key={`differential-${index}`}
                   className="flex-[0_0_auto] w-full md:w-[calc(50%-12px)] lg:w-[calc(25%-18px)]"
                 >
-                  <div className="relative h-96 rounded-xl overflow-hidden group cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-300">
+                  <div className="relative h-96 rounded-xl overflow-hidden group shadow-lg hover:shadow-2xl transition-all duration-300">
                     {/* Imagem de fundo */}
                     <div 
                       className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"

@@ -46,7 +46,7 @@ export default function Brands() {
   const duplicatedBrands = [...brands, ...brands]
 
   return (
-    <section className="py-8 bg-black">
+    <section className="py-4 bg-black">
       <div className="container mx-auto px-4">
         <div className="relative">
           {/* Carrossel */}
@@ -57,13 +57,13 @@ export default function Brands() {
                   key={`${brand.name}-${index}`}
                   className="flex-[0_0_auto] w-[150px] md:w-[200px]"
                 >
-                  <div className="flex justify-center items-center p-6 h-32">
+                  <div className="flex justify-center items-center h-20">
                     <Image
                       src={brand.logo}
                       alt={`Logo ${brand.name}`}
-                      width={160}
-                      height={100}
-                      className="max-h-20 w-auto object-contain transition-all duration-300 hover:scale-110"
+                      width={120}
+                      height={75}
+                      className="max-h-16 w-auto object-contain transition-all duration-300 hover:scale-110"
                     />
                   </div>
                 </div>

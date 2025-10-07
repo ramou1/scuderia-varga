@@ -23,7 +23,7 @@ const locations = [
     email: 'atendimento@vargasjc.com.br'
   },
   {
-    name: 'Varga Serviços Bosch',
+    name: 'Varga Serviços Bosch Car Service',
     city: 'Caraguatatuba',
     address: 'Rua Manoel Henrique de Oliveira, 1870 – Martim de Sá',
     cep: 'Caraguatatuba – SP, 11662-610',
@@ -94,8 +94,8 @@ export default function Footer() {
       </div>
 
       {/* Main Footer Content */}
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid lg:grid-cols-4 gap-12">
+      <div className="container mx-auto px-4 py-16 max-w-6xl">
+        <div className="grid lg:grid-cols-4 gap-8">
           {/* Logo e Descrição */}
           <div className="space-y-6">
             <div className="flex items-center gap-3">
@@ -115,7 +115,6 @@ export default function Footer() {
               />
             </div>
             <p className="text-gray-400 leading-relaxed">
-              Há mais de 25 anos oferecendo serviços automotivos de qualidade no Vale do Paraíba. 
               Especialistas em marcas premium com tecnologia de ponta.
             </p>
             
@@ -139,12 +138,27 @@ export default function Footer() {
               >
                 <Facebook className="w-6 h-6" />
               </a>
+              <a
+                href="https://wa.me/5512996011497"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-red-500 transition-colors"
+                aria-label="WhatsApp"
+              >
+                <Image
+                  src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                  alt="WhatsApp"
+                  width={24}
+                  height={24}
+                  className="w-6 h-6"
+                />
+              </a>
             </div>
           </div>
 
           {/* Unidades */}
           {locations.map((location, index) => (
-            <div key={index} className="space-y-4">
+            <div key={index} className="space-y-2">
               <h3 className="text-xl font-bold text-white uppercase">
                 {location.name}
               </h3>
