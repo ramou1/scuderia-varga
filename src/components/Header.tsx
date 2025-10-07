@@ -19,8 +19,8 @@ export default function Header() {
 
   const menuItems = [
     { label: 'QUEM SOMOS', href: '#quem-somos' },
-    { label: 'DIFERENCIAIS', href: '#diferenciais' },
     { label: 'SERVIÇOS', href: '#servicos' },
+    { label: 'DIFERENCIAIS', href: '#diferenciais' },
     { label: 'TECNOLOGIA', href: '#tecnologia' },
     { label: 'SCANNERS', href: '#scanners' },
   ]
