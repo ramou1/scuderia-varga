@@ -97,10 +97,10 @@ const mainServices = [
 ]
 
 export default function MainServices() {
-  const [selectedService, setSelectedService] = useState(null)
+  const [selectedService, setSelectedService] = useState<typeof mainServices[0] | null>(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
 
-  const openModal = (service: any) => {
+  const openModal = (service: typeof mainServices[0]) => {
     setSelectedService(service)
     setIsModalOpen(true)
   }

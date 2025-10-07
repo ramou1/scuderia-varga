@@ -6,7 +6,7 @@ import { X } from 'lucide-react'
 interface ServiceModalProps {
   service: {
     name: string
-    icon: any
+    icon: React.ComponentType<{ className?: string }>
     title: string
     subtitle: string
     description: string
