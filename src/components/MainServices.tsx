@@ -140,7 +140,9 @@ export default function MainServices() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {/* Layout original - comentado para possível reversão */}
+          {/* 
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
             {mainServices.map((service, index) => {
               const Icon = service.icon
               return (
@@ -150,7 +152,7 @@ export default function MainServices() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: index * 0.05 }}
                   viewport={{ once: true }}
-                  className="bg-gradient-to-br from-red-600 to-red-700 text-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center gap-4 cursor-pointer"
+                  className="bg-gradient-to-br from-red-600 to-red-700 text-white p-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center gap-3 cursor-pointer"
                   onClick={() => openModal(service)}
                 >
                   <div className="flex-shrink-0">
@@ -164,6 +166,140 @@ export default function MainServices() {
                 </motion.div>
               )
             })}
+          </div>
+          */}
+
+          {/* Layout específico - 6 linhas x 5 colunas */}
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-6 mx-auto">
+            {/* Linha 1 */}
+            <div></div>
+            <div></div>
+            <div 
+              className="bg-white/90 border-2 border-gray-800 text-gray-800 py-3 px-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center gap-3 cursor-pointer"
+              onClick={() => openModal(mainServices[2])}
+            >
+              <Target className="w-6 h-6 flex-shrink-0" />
+              <p className="font-semibold text-sm md:text-xs uppercase leading-tight text-gray-800">
+                {mainServices[2].name}
+              </p>
+            </div>
+            <div></div>
+            <div></div>
+
+            {/* Linha 2 */}
+            <div></div>
+            <div 
+              className="bg-white/90 border-2 border-gray-800 text-gray-800 py-3 px-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center gap-3 cursor-pointer"
+              onClick={() => openModal(mainServices[1])}
+            >
+              <Wind className="w-6 h-6 flex-shrink-0" />
+              <p className="font-semibold text-sm md:text-xs uppercase leading-tight text-gray-800">
+                {mainServices[1].name}
+              </p>
+            </div>
+            <div></div>
+            <div 
+              className="bg-white/90 border-2 border-gray-800 text-gray-800 py-3 px-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center gap-3 cursor-pointer"
+              onClick={() => openModal(mainServices[3])}
+            >
+              <Sparkles className="w-6 h-6 flex-shrink-0" />
+              <p className="font-semibold text-sm md:text-xs uppercase leading-tight text-gray-800">
+                {mainServices[3].name}
+              </p>
+            </div>
+            <div></div>
+
+            {/* Linha 3 */}
+            <div 
+              className="bg-white/90 border-2 border-gray-800 text-gray-800 py-3 px-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center gap-3 cursor-pointer"
+              onClick={() => openModal(mainServices[0])}
+            >
+              <Settings className="w-6 h-6 flex-shrink-0" />
+              <p className="font-semibold text-sm md:text-xs uppercase leading-tight text-gray-800">
+                {mainServices[0].name}
+              </p>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div 
+              className="bg-white/90 border-2 border-gray-800 text-gray-800 py-3 px-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center gap-3 cursor-pointer"
+              onClick={() => openModal(mainServices[4])}
+            >
+              <Gauge className="w-6 h-6 flex-shrink-0" />
+              <p className="font-semibold text-sm md:text-xs uppercase leading-tight text-gray-800">
+                {mainServices[4].name}
+              </p>
+            </div>
+
+            {/* Linha 4 */}
+            <div 
+              className="bg-white/90 border-2 border-gray-800 text-gray-800 py-3 px-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center gap-3 cursor-pointer"
+              onClick={() => openModal(mainServices[5])}
+            >
+              <Circle className="w-6 h-6 flex-shrink-0" />
+              <p className="font-semibold text-sm md:text-xs uppercase leading-tight text-gray-800">
+                {mainServices[5].name}
+              </p>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div 
+              className="bg-white/90 border-2 border-gray-800 text-gray-800 py-3 px-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center gap-3 cursor-pointer"
+              onClick={() => openModal(mainServices[9])}
+            >
+              <Shield className="w-6 h-6 flex-shrink-0" />
+              <p className="font-semibold text-sm md:text-xs uppercase leading-tight text-gray-800">
+                {mainServices[9].name}
+              </p>
+            </div>
+
+            {/* Linha 5 */}
+            <div></div>
+            <div 
+              className="bg-white/90 border-2 border-gray-800 text-gray-800 py-3 px-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center gap-3 cursor-pointer"
+              onClick={() => openModal(mainServices[10])}
+            >
+              <Zap className="w-6 h-6 flex-shrink-0" />
+              <p className="font-semibold text-sm md:text-xs uppercase leading-tight text-gray-800">
+                {mainServices[10].name}
+              </p>
+            </div>
+            <div 
+              className="bg-white/90 border-2 border-gray-800 text-gray-800 py-3 px-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center gap-3 cursor-pointer"
+              onClick={() => openModal(mainServices[6])}
+            >
+              <Wrench className="w-6 h-6 flex-shrink-0" />
+              <p className="font-semibold text-sm md:text-xs uppercase leading-tight text-gray-800">
+                {mainServices[6].name}
+              </p>
+            </div>
+            <div 
+              className="bg-white/90 border-2 border-gray-800 text-gray-800 py-3 px-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center gap-3 cursor-pointer"
+              onClick={() => openModal(mainServices[8])}
+            >
+              <Settings className="w-6 h-6 flex-shrink-0" />
+              <p className="font-semibold text-sm md:text-xs uppercase leading-tight text-gray-800">
+                {mainServices[8].name}
+              </p>
+            </div>
+            <div></div>
+
+            {/* Linha 6 */}
+            <div></div>
+            <div></div>
+            <div 
+              className="bg-white/90 border-2 border-gray-800 text-gray-800 py-3 px-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center gap-3 cursor-pointer"
+              onClick={() => openModal(mainServices[7])}
+            >
+              <Droplets className="w-6 h-6 flex-shrink-0" />
+              <p className="font-semibold text-sm md:text-xs uppercase leading-tight text-gray-800">
+                {mainServices[7].name}
+              </p>
+            </div>
+            <div></div>
+            <div></div>
           </div>
           </div>
         </div>
