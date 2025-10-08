@@ -89,17 +89,17 @@ export default function Scanners() {
           >
             <div className="grid md:grid-cols-2 gap-8 items-center">
               {/* Imagem */}
-              <div className="relative h-96 md:h-full">
+              <div className="relative h-64 md:h-full">
                 <Image
                   src="/images/scanners/scanner05.png"
                   alt="Scanner Launch Pad 7"
                   fill
-                  className="object-contain p-8"
+                  className="object-contain p-4 md:p-8"
                 />
               </div>
               
               {/* Conteúdo */}
-              <div className="p-8 md:p-12">
+              <div className="p-6 md:p-12">
                 <h3 className="text-2xl md:text-3xl font-bold mb-6 uppercase">
                   Scanner Launch Pad 7
                 </h3>
