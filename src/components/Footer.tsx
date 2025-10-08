@@ -169,9 +169,8 @@ export default function Footer() {
               <div className="space-y-3 text-sm text-gray-400">
                 <div className="flex items-start space-x-2">
                   <MapPin className="w-4 h-4 mt-1 flex-shrink-0 text-white" />
-                  <div>
-                    <p>{location.address}</p>
-                    <p>{location.cep}</p>
+                  <div className="text-xs">
+                    <p>{location.address}, {location.cep}</p>
                   </div>
                 </div>
                 
