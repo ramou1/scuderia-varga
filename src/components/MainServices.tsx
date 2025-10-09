@@ -18,11 +18,11 @@ import ServiceModal from './ServiceModal'
 
 const mainServices = [
   { 
-    name: 'DIAGNÓSTICO COMPUTADORIZADO', 
-    icon: Settings,
-    title: 'Diagnóstico Computadorizado',
-    subtitle: 'Precisão que você confia.',
-    description: 'Utilizamos tecnologia de ponta para identificar falhas com total exatidão. Mais agilidade e menos suposições.'
+    name: 'ALINHAMENTO 3D', 
+    icon: Target,
+    title: 'Alinhamento 3D',
+    subtitle: 'Precisão milimétrica para o seu veículo.',
+    description: 'Tecnologia 3D de última geração que garante alinhamento perfeito, melhor dirigibilidade e economia de pneus.'
   },
   { 
     name: 'AR CONDICIONADO', 
@@ -32,20 +32,6 @@ const mainServices = [
     description: 'Revisão completa do sistema de ar, incluindo filtro, gás e componentes. Ar puro e climatização eficiente, sempre.'
   },
   { 
-    name: 'ALINHAMENTO 3D', 
-    icon: Target,
-    title: 'Alinhamento 3D',
-    subtitle: 'Precisão milimétrica para o seu veículo.',
-    description: 'Tecnologia 3D de última geração que garante alinhamento perfeito, melhor dirigibilidade e economia de pneus.'
-  },
-  { 
-    name: 'OXISANITIZAÇÃO', 
-    icon: Sparkles,
-    title: 'Oxisanitização',
-    subtitle: 'Seu carro livre de odores e micro-organismos.',
-    description: 'Higienização com oxigênio ativo, eliminando fungos, bactérias e odores desagradáveis do ar-condicionado e do interior do veículo.'
-  },
-  { 
     name: 'BALANCEAMENTO COMPUTADORIZADO', 
     icon: Gauge,
     title: 'Balanceamento Computadorizado',
@@ -53,25 +39,11 @@ const mainServices = [
     description: 'Equipamento moderno para um balanceamento preciso, que reduz vibrações e prolonga a vida útil dos pneus.'
   },
   { 
-    name: 'PNEUS', 
-    icon: Circle,
-    title: 'Pneus',
-    subtitle: 'Qualidade do solo ao volante.',
-    description: 'Venda, instalação e manutenção com as melhores marcas do mercado. Garantindo rodagem suave e segura.'
-  },
-  { 
-    name: 'SUSPENSÃO', 
-    icon: Wrench,
-    title: 'Suspensão',
-    subtitle: 'Segurança e desempenho em cada curva.',
-    description: 'Avaliação técnica e manutenção completa da suspensão, garantindo estabilidade, conforto e resposta imediata na direção.'
-  },
-  { 
-    name: 'TROCA DE ÓLEO', 
-    icon: Droplets,
-    title: 'Troca de Óleo',
-    subtitle: 'Motor protegido e com mais vida útil.',
-    description: 'Serviço rápido e eficiente, com óleo e filtro corretos para cada tipo de motor. Revisão completa e personalizada.'
+    name: 'DIAGNÓSTICO COMPUTADORIZADO', 
+    icon: Settings,
+    title: 'Diagnóstico Computadorizado',
+    subtitle: 'Precisão que você confia.',
+    description: 'Utilizamos tecnologia de ponta para identificar falhas com total exatidão. Mais agilidade e menos suposições.'
   },
   { 
     name: 'FLUÍDO DE CÂMBIO AUTOMÁTICO', 
@@ -93,6 +65,34 @@ const mainServices = [
     title: 'Injeção Eletrônica',
     subtitle: 'Eficiência e economia com tecnologia.',
     description: 'Diagnóstico preciso e regulagem do sistema de injeção. Menor consumo, melhor desempenho e menor emissão de poluentes.'
+  },
+  { 
+    name: 'OXISANITIZAÇÃO', 
+    icon: Sparkles,
+    title: 'Oxisanitização',
+    subtitle: 'Seu carro livre de odores e micro-organismos.',
+    description: 'Higienização com oxigênio ativo, eliminando fungos, bactérias e odores desagradáveis do ar-condicionado e do interior do veículo.'
+  },
+  { 
+    name: 'PNEUS', 
+    icon: Circle,
+    title: 'Pneus',
+    subtitle: 'Qualidade do solo ao volante.',
+    description: 'Venda, instalação e manutenção com as melhores marcas do mercado. Garantindo rodagem suave e segura.'
+  },
+  { 
+    name: 'SUSPENSÃO', 
+    icon: Wrench,
+    title: 'Suspensão',
+    subtitle: 'Segurança e desempenho em cada curva.',
+    description: 'Avaliação técnica e manutenção completa da suspensão, garantindo estabilidade, conforto e resposta imediata na direção.'
+  },
+  { 
+    name: 'TROCA DE ÓLEO', 
+    icon: Droplets,
+    title: 'Troca de Óleo',
+    subtitle: 'Motor protegido e com mais vida útil.',
+    description: 'Serviço rápido e eficiente, com óleo e filtro corretos para cada tipo de motor. Revisão completa e personalizada.'
   },
 ]
 
@@ -156,7 +156,7 @@ export default function MainServices() {
                     <Icon className="w-6 h-6" />
                   </div>
                   <div className="flex-1">
-                    <p className="font-semibold text-sm md:text-xs uppercase leading-tight text-white">
+                    <p className="font-semibold text-sm md:text-sm uppercase leading-tight text-white">
                       {service.name}
                     </p>
                   </div>
@@ -310,7 +310,7 @@ export default function MainServices() {
                 onClick={() => openModal(mainServices[0])}
               >
                 <Settings className="w-6 h-6 flex-shrink-0" />
-                <p className="font-semibold text-sm md:text-xs uppercase leading-tight text-white">
+                <p className="font-semibold text-sm md:text-sm uppercase leading-tight text-white">
                   {mainServices[0].name}
                 </p>
               </div>
@@ -319,7 +319,7 @@ export default function MainServices() {
                 onClick={() => openModal(mainServices[1])}
               >
                 <Wind className="w-6 h-6 flex-shrink-0" />
-                <p className="font-semibold text-sm md:text-xs uppercase leading-tight text-white">
+                <p className="font-semibold text-sm md:text-sm uppercase leading-tight text-white">
                   {mainServices[1].name}
                 </p>
               </div>
@@ -328,7 +328,7 @@ export default function MainServices() {
                 onClick={() => openModal(mainServices[2])}
               >
                 <Target className="w-6 h-6 flex-shrink-0" />
-                <p className="font-semibold text-sm md:text-xs uppercase leading-tight text-white">
+                <p className="font-semibold text-sm md:text-sm uppercase leading-tight text-white">
                   {mainServices[2].name}
                 </p>
               </div>
@@ -337,7 +337,7 @@ export default function MainServices() {
                 onClick={() => openModal(mainServices[3])}
               >
                 <Sparkles className="w-6 h-6 flex-shrink-0" />
-                <p className="font-semibold text-sm md:text-xs uppercase leading-tight text-white">
+                <p className="font-semibold text-sm md:text-sm uppercase leading-tight text-white">
                   {mainServices[3].name}
                 </p>
               </div>
@@ -350,7 +350,7 @@ export default function MainServices() {
                 onClick={() => openModal(mainServices[4])}
               >
                 <Gauge className="w-6 h-6 flex-shrink-0" />
-                <p className="font-semibold text-sm md:text-xs uppercase leading-tight text-white">
+                <p className="font-semibold text-sm md:text-sm uppercase leading-tight text-white">
                   {mainServices[4].name}
                 </p>
               </div>
@@ -359,7 +359,7 @@ export default function MainServices() {
                 onClick={() => openModal(mainServices[5])}
               >
                 <Circle className="w-6 h-6 flex-shrink-0" />
-                <p className="font-semibold text-sm md:text-xs uppercase leading-tight text-white">
+                <p className="font-semibold text-sm md:text-sm uppercase leading-tight text-white">
                   {mainServices[5].name}
                 </p>
               </div>
@@ -368,7 +368,7 @@ export default function MainServices() {
                 onClick={() => openModal(mainServices[6])}
               >
                 <Wrench className="w-6 h-6 flex-shrink-0" />
-                <p className="font-semibold text-sm md:text-xs uppercase leading-tight text-white">
+                <p className="font-semibold text-sm md:text-sm uppercase leading-tight text-white">
                   {mainServices[6].name}
                 </p>
               </div>
@@ -381,7 +381,7 @@ export default function MainServices() {
                 onClick={() => openModal(mainServices[7])}
               >
                 <Droplets className="w-6 h-6 flex-shrink-0" />
-                <p className="font-semibold text-sm md:text-xs uppercase leading-tight text-white">
+                <p className="font-semibold text-sm md:text-sm uppercase leading-tight text-white">
                   {mainServices[7].name}
                 </p>
               </div>
@@ -390,7 +390,7 @@ export default function MainServices() {
                 onClick={() => openModal(mainServices[8])}
               >
                 <Settings className="w-6 h-6 flex-shrink-0" />
-                <p className="font-semibold text-sm md:text-xs uppercase leading-tight text-white">
+                <p className="font-semibold text-sm md:text-sm uppercase leading-tight text-white">
                   {mainServices[8].name}
                 </p>
               </div>
@@ -399,7 +399,7 @@ export default function MainServices() {
                 onClick={() => openModal(mainServices[9])}
               >
                 <Shield className="w-6 h-6 flex-shrink-0" />
-                <p className="font-semibold text-sm md:text-xs uppercase leading-tight text-white">
+                <p className="font-semibold text-sm md:text-sm uppercase leading-tight text-white">
                   {mainServices[9].name}
                 </p>
               </div>
@@ -408,7 +408,7 @@ export default function MainServices() {
                 onClick={() => openModal(mainServices[10])}
               >
                 <Zap className="w-6 h-6 flex-shrink-0" />
-                <p className="font-semibold text-sm md:text-xs uppercase leading-tight text-white">
+                <p className="font-semibold text-sm md:text-sm uppercase leading-tight text-white">
                   {mainServices[10].name}
                 </p>
               </div>
