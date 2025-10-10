@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { useCallback } from 'react'
+import { useCallback, useEffect, useMemo } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
@@ -23,16 +23,27 @@ const brands = [
 ]
 
 export default function Brands() {
+  const autoplay = useMemo(
+    () => Autoplay({ delay: 3000, stopOnInteraction: false, stopOnMouseEnter: false }),
+    []
+  )
+
   const [emblaRef, emblaApi] = useEmblaCarousel(
     { 
       loop: true, 
       align: 'start',
       slidesToScroll: 1,
       skipSnaps: false,
-      dragFree: false,
+      dragFree: true,
+      containScroll: 'trimSnaps',
     },
-    [Autoplay({ delay: 3000, stopOnInteraction: false, stopOnMouseEnter: false })]
+    [autoplay]
   )
+
+  useEffect(() => {
+    if (!emblaApi) return
+    emblaApi.on('select', () => autoplay.play())
+  }, [emblaApi, autoplay])
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev()
@@ -51,11 +62,11 @@ export default function Brands() {
         <div className="relative">
           {/* Carrossel */}
           <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex gap-6">
+            <div className="flex">
               {duplicatedBrands.map((brand, index) => (
                 <div
                   key={`${brand.name}-${index}`}
-                  className="flex-[0_0_auto] w-[150px] md:w-[200px]"
+                  className="shrink-0 basis-[150px] md:basis-[200px] px-3"
                 >
                   <div className="flex justify-center items-center h-20">
                     <Image

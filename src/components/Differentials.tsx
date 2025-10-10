@@ -1,6 +1,6 @@
 'use client'
 
-import { useCallback } from 'react'
+import { useCallback, useEffect, useMemo } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
@@ -33,16 +33,27 @@ const differentials = [
 ]
 
 export default function Differentials() {
+  const autoplay = useMemo(
+    () => Autoplay({ delay: 4000, stopOnInteraction: false, stopOnMouseEnter: false }),
+    []
+  )
+
   const [emblaRef, emblaApi] = useEmblaCarousel(
     { 
       loop: true, 
       align: 'start',
       slidesToScroll: 1,
       skipSnaps: false,
-      dragFree: false,
+      dragFree: true,
+      containScroll: 'trimSnaps',
     },
-    [Autoplay({ delay: 4000, stopOnInteraction: false, stopOnMouseEnter: false })]
+    [autoplay]
   )
+
+  useEffect(() => {
+    if (!emblaApi) return
+    emblaApi.on('select', () => autoplay.play())
+  }, [emblaApi, autoplay])
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev()
@@ -70,11 +81,11 @@ export default function Differentials() {
         <div className="relative">
           {/* Carrossel */}
           <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex gap-6">
+            <div className="flex">
               {duplicatedDifferentials.map((differential, index) => (
                 <div
                   key={`differential-${index}`}
-                  className="flex-[0_0_auto] w-full md:w-[calc(50%-12px)] lg:w-[calc(25%-18px)]"
+                  className="shrink-0 basis-full md:basis-1/2 lg:basis-1/4 px-3"
                 >
                   <div className="relative h-96 rounded-xl overflow-hidden group shadow-lg hover:shadow-2xl transition-all duration-300">
                     {/* Imagem de fundo */}
