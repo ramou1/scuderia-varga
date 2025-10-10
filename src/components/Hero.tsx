@@ -55,13 +55,13 @@ export default function Hero() {
               </div>
               <div className="w-px h-12 bg-gray-600"></div>
               <div className="text-center">
-                <div className="text-sm font-medium">Rua Maria de Lourdes Coutinho 100</div>
-                <div className="text-xs text-gray-300">Vila Adyana - SJC</div>
+                <div className="text-sm font-medium">Rua das Acácias, 390</div>
+                <div className="text-xs text-gray-300">Vila das Acácias - SJC</div>
               </div>
               <div className="w-px h-12 bg-gray-600"></div>
               <div className="text-center">
-                <div className="text-sm font-medium">Avenida Cassiano Ricardo 204</div>
-                <div className="text-xs text-gray-300">Vila Adyana - SJC</div>
+                <div className="text-sm font-medium">R. Manoel Henrique de Oliveira, 1870</div>
+                <div className="text-xs text-gray-300">Martim de Sá - Caraguá</div>
               </div>
             </div>
 
