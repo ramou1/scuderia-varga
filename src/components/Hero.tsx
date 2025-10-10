@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function Hero() {
 
   return (
-    <section className="relative h-[70vh] md:h-[80vh] flex items-center justify-center overflow-hidden">
+    <section className="relative h-[60vh] md:h-[80vh] flex items-center justify-center overflow-hidden">
       {/* Background Video - YouTube */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         {/* Vídeo do YouTube - Ajustado para mostrar parte inferior */}
@@ -55,13 +55,13 @@ export default function Hero() {
               </div>
               <div className="w-px h-12 bg-gray-600"></div>
               <div className="text-center">
-                <div className="text-sm font-medium">Rua das Acácias, 390</div>
+                <div className="text-sm font-medium">Rua das Acácias 390</div>
                 <div className="text-xs text-gray-300">Vila das Acácias - SJC</div>
               </div>
               <div className="w-px h-12 bg-gray-600"></div>
               <div className="text-center">
-                <div className="text-sm font-medium">R. Manoel Henrique de Oliveira, 1870</div>
-                <div className="text-xs text-gray-300">Martim de Sá - Caraguá</div>
+                <div className="text-sm font-medium">R. Manoel Henrique de Oliveira 1870</div>
+                <div className="text-xs text-gray-300">Martim de Sá - Caraguatatuba</div>
               </div>
             </div>
 
@@ -113,13 +113,13 @@ export default function Hero() {
             {/* Segunda linha - Endereços */}
             <div className="space-y-2">
               <div className="text-center">
-                <div className="text-xs font-medium">Avenida Andrômeda 2410 - Jardim Satélite</div>
+                <div className="text-xs font-medium">Avenida Andrômeda 2410 - Jardim Satélite, SJC</div>
               </div>
               <div className="text-center">
-                <div className="text-xs font-medium">Rua Maria de Lourdes Coutinho 100 - Vila Adyana</div>
+                <div className="text-xs font-medium">Rua das Acácias 390 - Vila das Acácias, SJC</div>
               </div>
               <div className="text-center">
-                <div className="text-xs font-medium">Avenida Cassiano Ricardo 204 - Vila Adyana</div>
+                <div className="text-xs font-medium">R. Manoel Henrique de Oliveira 1870 - Martim de Sá, Caraguatatuba</div>
               </div>
             </div>
 
