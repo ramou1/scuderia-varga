@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import { Wrench, Settings, Car, Gauge, Droplets, Shield, Zap, Filter } from 'lucide-react'
+import { Wrench, Settings, Car, Gauge, Droplets, Shield, Zap, Monitor } from 'lucide-react'
 import ServiceModal from './ServiceModal'
 
 const services = [
@@ -37,22 +37,22 @@ const services = [
     description: 'Contamos com uma equipe técnica altamente qualificada e equipamentos modernos para garantir o diagnóstico preciso e o melhor desempenho do sistema de transmissão do seu veículo.'
   },
   { 
+    icon: Monitor, 
+    title: 'Diagnóstico Computadorizado',
+    subtitle: 'Tecnologia avançada para identificar problemas.',
+    description: 'Utilizamos scanners de última geração para diagnóstico preciso e rápido de falhas no sistema eletrônico do veículo, garantindo reparos eficientes e econômicos.'
+  },
+  { 
     icon: Shield, 
     title: 'Direção',
-    subtitle: '',
+    subtitle: 'Precisão e segurança no controle do seu veículo.',
     description: 'Diagnóstico preciso em conjunto de direção elétrica (EPS), inspeções completa no sistema de  direção hidráulica, elétrica e mecânica.'
   },
   { 
     icon: Zap, 
     title: 'Elétrica',
-    subtitle: '',
+    subtitle: 'Diagnóstico e reparos elétricos com precisão e segurança.',
     description: 'Equipamentos de ultima geração e de alta precisão para identificar falhas no sistema elétrico do veiculo com rapidez e precisão.'
-  },
-  { 
-    icon: Filter, 
-    title: 'Filtros',
-    subtitle: '',
-    description: ''
   },
   { 
     icon: Shield, 
@@ -69,7 +69,7 @@ const services = [
   { 
     icon: Droplets, 
     title: 'Lubrificantes',
-    subtitle: '',
+    subtitle: 'Proteção máxima para o motor com os melhores lubrificantes.',
     description: 'Desempenho total, com lubrificantes de alta qualidade e troca técnica de confiança.'
   },
   { 
@@ -81,7 +81,7 @@ const services = [
   { 
     icon: Car, 
     title: 'Martelinho de Ouro',
-    subtitle: '',
+    subtitle: 'Reparos precisos, sem pintura, mantendo a originalidade do seu veículo.',
     description: 'Pequenos reparos, preservando a pintura original e mantando a originalidade e o valor de seu veiculo.'
   },
   { 
