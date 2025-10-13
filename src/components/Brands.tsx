@@ -57,7 +57,7 @@ export default function Brands() {
   const duplicatedBrands = [...brands, ...brands]
 
   return (
-    <section className="py-4 bg-black">
+    <section className="py-3 bg-black">
       <div className="container mx-auto px-4">
         <div className="relative">
           {/* Carrossel */}
@@ -68,7 +68,7 @@ export default function Brands() {
                   key={`${brand.name}-${index}`}
                   className="shrink-0 basis-[150px] md:basis-[200px] px-3"
                 >
-                  <div className="flex justify-center items-center h-20">
+                  <div className="flex justify-center items-center h-18">
                     <Image
                       src={brand.logo}
                       alt={`Logo ${brand.name}`}
