@@ -15,8 +15,8 @@ const services = [
   { 
     icon: Wrench, 
     title: 'Análise de Pré Compra',
-    subtitle: '',
-    description: ''
+    subtitle: 'Importante para garantir que o carro está realmente em dia.',
+    description: 'Pré-compra ou venda é a análise minuciosa do carro antes do cliente fechar negócio ou então antes do proprietário vender. Neste serviço, o mecânico avalia a aparência de itens como o motor, os filtros, as rodas, a lataria, as suspensões, a embreagem e etc. Essa “vistoria” mostra as reais condições do carro e pode descobrir problemas escondidos. Ela ajuda o cliente a decidir se vai comprar ou não e até mesmo se o preço está justo.'
   },
   { 
     icon: Gauge, 
@@ -34,19 +34,19 @@ const services = [
     icon: Car, 
     title: 'Câmbio',
     subtitle: 'Cuide da saúde do seu câmbio.',
-    description: 'Utilizamos fluido adequado para cada modelo. Serviço técnico que garante trocas limpas, seguras e no tempo certo.'
+    description: 'Contamos com uma equipe técnica altamente qualificada e equipamentos modernos para garantir o diagnóstico preciso e o melhor desempenho do sistema de transmissão do seu veículo.'
   },
   { 
     icon: Shield, 
     title: 'Direção',
     subtitle: '',
-    description: ''
+    description: 'Diagnóstico preciso em conjunto de direção elétrica (EPS), inspeções completa no sistema de  direção hidráulica, elétrica e mecânica.'
   },
   { 
     icon: Zap, 
     title: 'Elétrica',
     subtitle: '',
-    description: ''
+    description: 'Equipamentos de ultima geração e de alta precisão para identificar falhas no sistema elétrico do veiculo com rapidez e precisão.'
   },
   { 
     icon: Filter, 
@@ -70,19 +70,19 @@ const services = [
     icon: Droplets, 
     title: 'Lubrificantes',
     subtitle: '',
-    description: ''
+    description: 'Desempenho total, com lubrificantes de alta qualidade e troca técnica de confiança.'
   },
   { 
     icon: Wrench, 
     title: 'Mecânica Geral',
     subtitle: '',
-    description: ''
+    description: 'Cuidado completo para seu veículo rodar com segurança e desempenho máximo.'
   },
   { 
     icon: Car, 
     title: 'Martelinho de Ouro',
     subtitle: '',
-    description: ''
+    description: 'Pequenos reparos, preservando a pintura original e mantando a originalidade e o valor de seu veiculo.'
   },
   { 
     icon: Gauge, 
@@ -94,12 +94,12 @@ const services = [
     icon: Settings, 
     title: 'Revisão de Blindagem',
     subtitle: 'Segurança especializada para veículos blindados.',
-    description: 'Inspeção especializada em veículos blindados. Verificação de sistemas de proteção, vidros e estruturas de segurança.'
+    description: 'É um serviço especializado que visa garantir a integridade, segurança e desempenho do sistema balístico instalado no veículo, mantendo os mais altos padrões de proteção sem comprometer o conforto e a sofisticação típicos de modelos de alto padrão.'
   },
   { 
     icon: Droplets, 
     title: 'Sistema de Arrefecimento',
-    subtitle: '',
+    subtitle: 'Limpezas preventivas',
     description: ''
   },
   { 
