@@ -1,6 +1,6 @@
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
-import MainServices from '@/components/MainServices'
+// import MainServices from '@/components/MainServices' // Comentado temporariamente
 import Brands from '@/components/Brands'
 import Differentials from '@/components/Differentials'
 import About from '@/components/About'
@@ -17,7 +17,7 @@ export default function Home() {
       <Hero />
       <Brands />
       <About />
-      <MainServices />
+      {/* <MainServices /> */} {/* Comentado temporariamente */}
       <Differentials />
       <Services />
       <Technology />
