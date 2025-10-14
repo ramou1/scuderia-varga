@@ -36,9 +36,9 @@ export default function ServiceModal({ service, isOpen, onClose }: ServiceModalP
                 <Image
                   src={`/images/icones/${service.icon}`}
                   alt={service.title}
-                  width={32}
-                  height={32}
-                  className="w-8 h-8 object-contain"
+                  width={40}
+                  height={40}
+                  className="w-10 h-10 object-contain"
                 />
               </div>
               <div>
