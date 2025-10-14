@@ -2,11 +2,12 @@
 
 import { motion } from 'framer-motion'
 import { X } from 'lucide-react'
+import Image from 'next/image'
 
 interface ServiceModalProps {
   service: {
     name: string
-    icon: React.ComponentType<{ className?: string }>
+    icon: string
     title: string
     subtitle: string
     description: string
@@ -17,8 +18,6 @@ interface ServiceModalProps {
 
 export default function ServiceModal({ service, isOpen, onClose }: ServiceModalProps) {
   if (!isOpen || !service) return null
-
-  const Icon = service.icon
 
   return (
     <div className="fixed inset-0 bg-black/50 backdrop-blur-[2px] z-50 flex items-center justify-center p-4">
@@ -33,8 +32,14 @@ export default function ServiceModal({ service, isOpen, onClose }: ServiceModalP
         <div className="bg-neutral-800 text-white p-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
-              <div className="bg-white/20 p-3 rounded-xl">
-                <Icon className="w-8 h-8" />
+              <div className="bg-white p-3 rounded-xl">
+                <Image
+                  src={`/images/icones/${service.icon}`}
+                  alt={service.title}
+                  width={32}
+                  height={32}
+                  className="w-8 h-8 object-contain"
+                />
               </div>
               <div>
                 <h3 className="text-2xl font-bold">{service.title}</h3>
