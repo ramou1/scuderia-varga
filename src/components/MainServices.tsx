@@ -420,7 +420,13 @@ export default function MainServices() {
 
       {/* Modal Component */}
       <ServiceModal 
-        service={selectedService}
+        service={selectedService ? {
+          name: selectedService.title,
+          icon: selectedService.name.toLowerCase().replace(/\s+/g, '-') + '.png',
+          title: selectedService.title,
+          subtitle: selectedService.subtitle,
+          description: selectedService.description
+        } : null}
         isOpen={isModalOpen}
         onClose={closeModal}
       />
