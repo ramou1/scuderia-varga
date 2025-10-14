@@ -162,7 +162,7 @@ export default function Services() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="bg-neutral-900 px-4 py-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-2 flex items-center gap-4 cursor-pointer"
+                  className="bg-neutral-900/70 px-4 py-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-2 flex items-center gap-4 cursor-pointer"
                   onClick={() => openModal(service)}
                 >
                   <div className="flex-shrink-0 flex items-center justify-center w-16 h-16 bg-white rounded-lg p-2">
