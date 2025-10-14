@@ -99,8 +99,8 @@ const services = [
   { 
     icon: 'sistema-arrefecimento.png', 
     title: 'Sistema de Arrefecimento',
-    subtitle: 'Limpezas preventivas',
-    description: ''
+    subtitle: 'Mantendo a temperatura ideal para o desempenho do seu motor.',
+    description: 'O sistema de arrefecimento é essencial para o bom funcionamento do motor do seu veículo. Ele tem a função de controlar a temperatura do motor, evitando o superaquecimento e garantindo um desempenho ideal em todas as condições de uso.'
   },
   { 
     icon: 'suspensao.png', 
