@@ -14,6 +14,20 @@ export const metadata: Metadata = {
     siteName: 'Scuderia Varga',
     locale: 'pt_BR',
     type: 'website',
+    images: [
+      {
+        url: '/images/icone.png',
+        width: 1200,
+        height: 630,
+        alt: 'Scuderia Varga - Centro Automotivo Premium',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Scuderia Varga - Centro Automotivo Premium',
+    description: 'Há mais de 25 anos oferecendo serviços automotivos de qualidade no Vale do Paraíba.',
+    images: ['/images/icone.png'],
   },
 }
 

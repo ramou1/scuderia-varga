@@ -138,4 +138,4 @@ scuderia-varga/
 
 ---
 
-**Desenvolvido com ❤️ por Ramon Oliveira**
+**Desenvolvido por Ramon Oliveira**
