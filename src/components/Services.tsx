@@ -93,8 +93,8 @@ const services = [
   { 
     icon: 'revisao-blindagem.png', 
     title: 'Revisão de Blindagem',
-    subtitle: 'Segurança especializada para veículos blindados. Em parceria com a empresa PROsafety Blindagens.',
-    description: 'É um serviço especializado que visa garantir a integridade, segurança e desempenho do sistema balístico instalado no veículo, mantendo os mais altos padrões de proteção sem comprometer o conforto e a sofisticação típicos de modelos de alto padrão.'
+    subtitle: 'Segurança especializada para veículos blindados.',
+    description: 'É um serviço especializado que visa garantir a integridade, segurança e desempenho do sistema balístico instalado no veículo, mantendo os mais altos padrões de proteção sem comprometer o conforto e a sofisticação típicos de modelos de alto padrão. Em parceria com a empresa PROsafety Blindagens.'
   },
   { 
     icon: 'sistema-arrefecimento.png', 
