@@ -43,7 +43,7 @@ export default function About() {
             </p>
             
             <p className="text-base md:text-lg">
-              Nossa estrutura permite fornecer serviços ágeis, reduzindo o tempo de indisponibilidade do veículo ao cliente final. Com foco no cliente, buscamos estar sempre atualizados nas novas tecnologias e qualificações dos nossos colaboradores, para garantir a qualidade no serviço prestado, de forma rápida e segura.
+              Nossa estrutura permite fornecer serviços ágeis, reduzindo o tempo de indisponibilidade do veiculo ao cliente final. Trabalhamos com veículos Híbridos e Elétricos. Com foco no cliente, buscamos estar sempre atualizados nas novas tecnologias e qualificações dos nossos colaboradores, para garantir a qualidade no serviço prestado, de forma rápida e segura.
             </p>
           </motion.div>
 
