@@ -309,7 +309,7 @@ export default function MainServices() {
                 className="bg-black/60 border-2 border-white text-white py-3 px-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center gap-3 cursor-pointer"
                 onClick={() => openModal(mainServices[0])}
               >
-                <Settings className="w-6 h-6 flex-shrink-0" />
+                <Settings className="w-8 h-8 flex-shrink-0" />
                 <p className="font-semibold text-sm md:text-sm uppercase leading-tight text-white">
                   {mainServices[0].name}
                 </p>
@@ -318,7 +318,7 @@ export default function MainServices() {
                 className="bg-black/60 border-2 border-white text-white py-3 px-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center gap-3 cursor-pointer"
                 onClick={() => openModal(mainServices[1])}
               >
-                <Wind className="w-6 h-6 flex-shrink-0" />
+                <Wind className="w-8 h-8 flex-shrink-0" />
                 <p className="font-semibold text-sm md:text-sm uppercase leading-tight text-white">
                   {mainServices[1].name}
                 </p>
@@ -327,7 +327,7 @@ export default function MainServices() {
                 className="bg-black/60 border-2 border-white text-white py-3 px-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center gap-3 cursor-pointer"
                 onClick={() => openModal(mainServices[2])}
               >
-                <Target className="w-6 h-6 flex-shrink-0" />
+                <Target className="w-8 h-8 flex-shrink-0" />
                 <p className="font-semibold text-sm md:text-sm uppercase leading-tight text-white">
                   {mainServices[2].name}
                 </p>
@@ -336,7 +336,7 @@ export default function MainServices() {
                 className="bg-black/60 border-2 border-white text-white py-3 px-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center gap-3 cursor-pointer"
                 onClick={() => openModal(mainServices[3])}
               >
-                <Sparkles className="w-6 h-6 flex-shrink-0" />
+                <Sparkles className="w-8 h-8 flex-shrink-0" />
                 <p className="font-semibold text-sm md:text-sm uppercase leading-tight text-white">
                   {mainServices[3].name}
                 </p>
@@ -349,7 +349,7 @@ export default function MainServices() {
                 className="bg-black/60 border-2 border-white text-white py-3 px-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center gap-3 cursor-pointer"
                 onClick={() => openModal(mainServices[4])}
               >
-                <Gauge className="w-6 h-6 flex-shrink-0" />
+                <Gauge className="w-8 h-8 flex-shrink-0" />
                 <p className="font-semibold text-sm md:text-sm uppercase leading-tight text-white">
                   {mainServices[4].name}
                 </p>
@@ -358,7 +358,7 @@ export default function MainServices() {
                 className="bg-black/60 border-2 border-white text-white py-3 px-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center gap-3 cursor-pointer"
                 onClick={() => openModal(mainServices[5])}
               >
-                <Circle className="w-6 h-6 flex-shrink-0" />
+                <Circle className="w-8 h-8 flex-shrink-0" />
                 <p className="font-semibold text-sm md:text-sm uppercase leading-tight text-white">
                   {mainServices[5].name}
                 </p>
@@ -367,7 +367,7 @@ export default function MainServices() {
                 className="bg-black/60 border-2 border-white text-white py-3 px-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center gap-3 cursor-pointer"
                 onClick={() => openModal(mainServices[6])}
               >
-                <Wrench className="w-6 h-6 flex-shrink-0" />
+                <Wrench className="w-8 h-8 flex-shrink-0" />
                 <p className="font-semibold text-sm md:text-sm uppercase leading-tight text-white">
                   {mainServices[6].name}
                 </p>
@@ -380,7 +380,7 @@ export default function MainServices() {
                 className="bg-black/60 border-2 border-white text-white py-3 px-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center gap-3 cursor-pointer"
                 onClick={() => openModal(mainServices[7])}
               >
-                <Droplets className="w-6 h-6 flex-shrink-0" />
+                <Droplets className="w-8 h-8 flex-shrink-0" />
                 <p className="font-semibold text-sm md:text-sm uppercase leading-tight text-white">
                   {mainServices[7].name}
                 </p>
@@ -389,7 +389,7 @@ export default function MainServices() {
                 className="bg-black/60 border-2 border-white text-white py-3 px-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center gap-3 cursor-pointer"
                 onClick={() => openModal(mainServices[8])}
               >
-                <Settings className="w-6 h-6 flex-shrink-0" />
+                <Settings className="w-8 h-8 flex-shrink-0" />
                 <p className="font-semibold text-sm md:text-sm uppercase leading-tight text-white">
                   {mainServices[8].name}
                 </p>
@@ -398,7 +398,7 @@ export default function MainServices() {
                 className="bg-black/60 border-2 border-white text-white py-3 px-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center gap-3 cursor-pointer"
                 onClick={() => openModal(mainServices[9])}
               >
-                <Shield className="w-6 h-6 flex-shrink-0" />
+                <Shield className="w-8 h-8 flex-shrink-0" />
                 <p className="font-semibold text-sm md:text-sm uppercase leading-tight text-white">
                   {mainServices[9].name}
                 </p>
@@ -407,7 +407,7 @@ export default function MainServices() {
                 className="bg-black/60 border-2 border-white text-white py-3 px-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex items-center gap-3 cursor-pointer"
                 onClick={() => openModal(mainServices[10])}
               >
-                <Zap className="w-6 h-6 flex-shrink-0" />
+                <Zap className="w-8 h-8 flex-shrink-0" />
                 <p className="font-semibold text-sm md:text-sm uppercase leading-tight text-white">
                   {mainServices[10].name}
                 </p>
@@ -420,7 +420,13 @@ export default function MainServices() {
 
       {/* Modal Component */}
       <ServiceModal 
-        service={selectedService}
+        service={selectedService ? {
+          name: selectedService.title,
+          icon: selectedService.name.toLowerCase().replace(/\s+/g, '-') + '.png',
+          title: selectedService.title,
+          subtitle: selectedService.subtitle,
+          description: selectedService.description
+        } : null}
         isOpen={isModalOpen}
         onClose={closeModal}
       />

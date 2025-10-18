@@ -2,108 +2,108 @@
 
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import { Wrench, Settings, Car, Gauge, Droplets, Shield, Zap, Monitor } from 'lucide-react'
+import Image from 'next/image'
 import ServiceModal from './ServiceModal'
 
 const services = [
   { 
-    icon: Settings, 
+    icon: 'alinhamento.png', 
     title: 'Alinhamento',
     subtitle: 'Precisão milimétrica para o seu veículo.',
     description: 'Tecnologia 3D de última geração que garante alinhamento perfeito, melhor dirigibilidade e economia de pneus.'
   },
   { 
-    icon: Wrench, 
+    icon: 'analise-pre-compra.png', 
     title: 'Análise de Pré Compra',
     subtitle: 'Importante para garantir que o carro está realmente em dia.',
-    description: 'Pré-compra ou venda é a análise minuciosa do carro antes do cliente fechar negócio ou então antes do proprietário vender. Neste serviço, o mecânico avalia a aparência de itens como o motor, os filtros, as rodas, a lataria, as suspensões, a embreagem e etc. Essa “vistoria” mostra as reais condições do carro e pode descobrir problemas escondidos. Ela ajuda o cliente a decidir se vai comprar ou não e até mesmo se o preço está justo.'
+    description: 'Pré-compra ou venda é a análise minuciosa do carro antes do cliente fechar negócio ou então antes do proprietário vender. Neste serviço, o mecânico avalia a aparência de itens como o motor, os filtros, as rodas, a lataria, as suspensões, a embreagem e etc. Essa "vistoria" mostra as reais condições do carro e pode descobrir problemas escondidos. Ela ajuda o cliente a decidir se vai comprar ou não e até mesmo se o preço está justo.'
   },
   { 
-    icon: Gauge, 
+    icon: 'ar-condicionado.png', 
     title: 'Ar Condicionado',
     subtitle: 'Conforto o ano inteiro.',
     description: 'Revisão completa do sistema de ar, incluindo filtro, gás e componentes. Ar puro e climatização eficiente, sempre.'
   },
   { 
-    icon: Zap, 
+    icon: 'balanceamento.png', 
     title: 'Balanceamento',
     subtitle: 'Estabilidade e conforto na direção.',
     description: 'Equipamento moderno para um balanceamento preciso, que reduz vibrações e prolonga a vida útil dos pneus.'
   },
   { 
-    icon: Car, 
+    icon: 'cambio.png', 
     title: 'Câmbio',
     subtitle: 'Cuide da saúde do seu câmbio.',
     description: 'Contamos com uma equipe técnica altamente qualificada e equipamentos modernos para garantir o diagnóstico preciso e o melhor desempenho do sistema de transmissão do seu veículo.'
   },
   { 
-    icon: Monitor, 
+    icon: 'diagnostico-computadorizado.png', 
     title: 'Diagnóstico Computadorizado',
     subtitle: 'Tecnologia avançada para identificar problemas.',
     description: 'Utilizamos scanners de última geração para diagnóstico preciso e rápido de falhas no sistema eletrônico do veículo, garantindo reparos eficientes e econômicos.'
   },
   { 
-    icon: Shield, 
+    icon: 'direcao.png', 
     title: 'Direção',
     subtitle: 'Precisão e segurança no controle do seu veículo.',
     description: 'Diagnóstico preciso em conjunto de direção elétrica (EPS), inspeções completa no sistema de  direção hidráulica, elétrica e mecânica.'
   },
   { 
-    icon: Zap, 
+    icon: 'eletrica.png', 
     title: 'Elétrica',
     subtitle: 'Diagnóstico e reparos elétricos com precisão e segurança.',
     description: 'Equipamentos de ultima geração e de alta precisão para identificar falhas no sistema elétrico do veiculo com rapidez e precisão.'
   },
   { 
-    icon: Shield, 
+    icon: 'freios.png', 
     title: 'Freios',
     subtitle: 'Confiança em cada frenagem.',
     description: 'Revisão detalhada com componentes de alta qualidade. Segurança máxima para você e sua família.'
   },
   { 
-    icon: Settings, 
+    icon: 'injecao-eletronica.png', 
     title: 'Injeção Eletrônica',
     subtitle: 'Eficiência e economia com tecnologia.',
     description: 'Diagnóstico preciso e regulagem do sistema de injeção. Menor consumo, melhor desempenho e menor emissão de poluentes.'
   },
   { 
-    icon: Droplets, 
+    icon: 'lubrificantes.png', 
     title: 'Lubrificantes',
     subtitle: 'Proteção máxima para o motor com os melhores lubrificantes.',
     description: 'Desempenho total, com lubrificantes de alta qualidade e troca técnica de confiança.'
   },
   { 
-    icon: Wrench, 
+    icon: 'mecanica-geral.png', 
     title: 'Mecânica Geral',
     subtitle: '',
     description: 'Cuidado completo para seu veículo rodar com segurança e desempenho máximo.'
   },
   { 
-    icon: Car, 
+    icon: 'martelinho-ouro.png', 
     title: 'Martelinho de Ouro',
     subtitle: 'Reparos precisos, sem pintura, mantendo a originalidade do seu veículo.',
     description: 'Pequenos reparos, preservando a pintura original e mantando a originalidade e o valor de seu veiculo.'
   },
   { 
-    icon: Gauge, 
+    icon: 'pneus.png', 
     title: 'Pneus',
     subtitle: 'Qualidade do solo ao volante.',
     description: 'Venda, instalação e manutenção com as melhores marcas do mercado. Garantindo rodagem suave e segura.'
   },
   { 
-    icon: Settings, 
+    icon: 'revisao-blindagem.png', 
     title: 'Revisão de Blindagem',
     subtitle: 'Segurança especializada para veículos blindados.',
     description: 'É um serviço especializado que visa garantir a integridade, segurança e desempenho do sistema balístico instalado no veículo, mantendo os mais altos padrões de proteção sem comprometer o conforto e a sofisticação típicos de modelos de alto padrão.'
   },
   { 
-    icon: Droplets, 
+    icon: 'sistema-arrefecimento.png', 
     title: 'Sistema de Arrefecimento',
-    subtitle: 'Limpezas preventivas',
-    description: ''
+    subtitle: 'Mantendo a temperatura ideal para o desempenho do seu motor.',
+    description: 'O sistema de arrefecimento é essencial para o bom funcionamento do motor do seu veículo. Ele tem a função de controlar a temperatura do motor, evitando o superaquecimento e garantindo um desempenho ideal em todas as condições de uso.'
   },
   { 
-    icon: Shield, 
+    icon: 'suspensao.png', 
     title: 'Suspensão',
     subtitle: 'Segurança e desempenho em cada curva.',
     description: 'Avaliação técnica e manutenção completa da suspensão, garantindo estabilidade, conforto e resposta imediata na direção.'
@@ -155,7 +155,6 @@ export default function Services() {
           {/* Detailed Services Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {services.map((service, index) => {
-              const Icon = service.icon
               return (
                 <motion.div
                   key={service.title}
@@ -163,11 +162,17 @@ export default function Services() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="bg-neutral-900 p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-2 flex items-center gap-4 cursor-pointer"
+                  className="bg-neutral-900/70 px-4 py-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-2 flex items-center gap-4 cursor-pointer"
                   onClick={() => openModal(service)}
                 >
-                  <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 bg-red-600 text-white rounded-lg">
-                    <Icon className="w-6 h-6" />
+                  <div className="flex-shrink-0 flex items-center justify-center w-16 h-16 bg-white rounded-lg p-2">
+                    <Image
+                      src={`/images/icones/${service.icon}`}
+                      alt={service.title}
+                      width={40}
+                      height={40}
+                      className="w-10 h-10 object-contain"
+                    />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-base font-bold text-white uppercase">
