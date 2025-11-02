@@ -6,11 +6,17 @@ import Image from 'next/image'
 import ServiceModal from './ServiceModal'
 
 const services = [
-  { 
+  /* {
     icon: 'alinhamento.png', 
     title: 'Alinhamento',
     subtitle: 'Precisão milimétrica para o seu veículo.',
     description: 'Tecnologia 3D de última geração que garante alinhamento perfeito, melhor dirigibilidade e economia de pneus.'
+  }, */
+  {
+    icon: 'alinhamento.png', 
+    title: 'Alinhamento e Balanceamento',
+    subtitle: 'Precisão milimétrica para o seu veículo.',
+    description: 'O alinhamento 3D e balanceamento devem ser realizados periodicamente, ou sempre que houver troca de pneus, substituição de peças da suspensão, impactos fortes ou percepção de vibrações e desalinhamento na direção.'
   },
   { 
     icon: 'analise-pre-compra.png', 
@@ -24,12 +30,12 @@ const services = [
     subtitle: 'Conforto o ano inteiro.',
     description: 'Revisão completa do sistema de ar, incluindo filtro, gás e componentes. Ar puro e climatização eficiente, sempre.'
   },
-  { 
+  /*{ 
     icon: 'balanceamento.png', 
     title: 'Balanceamento',
     subtitle: 'Estabilidade e conforto na direção.',
     description: 'Equipamento moderno para um balanceamento preciso, que reduz vibrações e prolonga a vida útil dos pneus.'
-  },
+  }, */
   { 
     icon: 'cambio.png', 
     title: 'Câmbio',
