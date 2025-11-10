@@ -14,7 +14,7 @@ const technologies = [
   {
     icon: Cpu,
     title: 'ALINHADORA 3D FORTA TECH ADVANCED',
-    image: '/images/tecnologia02.png',
+    image: '/images/tecnologia02.jpeg',
     description: 'Alinhamento veicular com mobilidade e versatilidade – permite a execução precisa e eficiente em qualquer elevador. Com tecnologia de ponta, conta com cálculos precisos e câmeras com resolução 4k, garantindo as medições detalhadas e precisas, aumentando a qualidade e reduzindo o tempo de execução. Utilizando mini targets de medição com filtro de luz, assegura qualidade e estabilidade superiores, durante todo o processo, homologado pela Volvo e pela VW.'
   },
   {
